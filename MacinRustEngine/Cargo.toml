@@ -1,0 +1,26 @@
+[package]
+name = "macin-rust-engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "macin_engine"
+crate-type = ["staticlib"]   # Linked into XPC service via FFI
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["stream", "rustls-tls"] }
+tokio-tungstenite = "0.26"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+futures-util = "0.3"
+uuid = { version = "1", features = ["v4"] }
+parking_lot = "0.12"
+
+[dev-dependencies]
+tokio-test = "0.4"
+wiremock = "0.6"
+
+[profile.release]
+opt-level = 3
+lto = true

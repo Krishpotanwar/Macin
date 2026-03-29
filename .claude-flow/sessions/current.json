@@ -1,0 +1,19 @@
+{
+  "id": "session-1774737041878",
+  "startedAt": "2026-03-28T22:30:41.878Z",
+  "cwd": "/Users/krish/Desktop/study/project/MACIN_download_manager",
+  "context": {
+    "lastMatchedPatterns": [
+      "mem-MEMORY-memory-index",
+      "mem-project_smartroadhazard----",
+      "mem-user_krish----"
+    ]
+  },
+  "metrics": {
+    "edits": 18,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "updatedAt": "2026-03-28T22:47:07.669Z"
+}

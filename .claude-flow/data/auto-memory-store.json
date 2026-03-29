@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mem-MEMORY-memory-index",
+    "key": "memory-index",
+    "content": "- [user_krish.md](user_krish.md) — Krish's profile: B.Tech CSE AI/ML student, Nagpur, intermediate level\n- [project_smartroadhazard.md](project_smartroadhazard.md) — SmartRoadHazard project status and architecture decisions",
+    "summary": "Memory Index",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/krish/.claude/projects/-Users-krish-Desktop-study-project-SmartRoadHazard/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1774737041880
+  },
+  {
+    "id": "mem-project_smartroadhazard----",
+    "key": "-",
+    "content": "name: smartroadhazard_project\ndescription: SmartRoadHazard - IoT simulation college project, fully built on 2026-03-16\ntype: project\n---\n\nFull-stack IoT simulation project built 2026-03-16. Status: COMPLETE.\n\nAll 11 files created under /Users/krish/Desktop/study/project/SmartRoadHazard/\n\n**Why:** Graded college project for B.Tech CSE (AI & ML), Ramdeobaba University.\n\n**How to apply:** If resuming this project, read PROJECT_STATUS.md at .claude/sessions/PROJECT_STATUS.md. The only outstanding it",
+    "summary": "---",
+    "namespace": "project_smartroadhazard",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/krish/.claude/projects/-Users-krish-Desktop-study-project-SmartRoadHazard/memory/project_smartroadhazard.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1774737041881
+  },
+  {
+    "id": "mem-user_krish----",
+    "key": "-",
+    "content": "name: user_krish_profile\ndescription: Krish Potanwar - B.Tech CSE (AI & ML) student at Ramdeobaba University, Nagpur\ntype: user\n---\n\n- B.Tech CSE (AI & ML), Ramdeobaba University, Nagpur\n- Intermediate level: understands Python, basic web dev, Arduino C++\n- Machine: MacOS (Apple Silicon or Intel)\n- Working on graded college projects that must be fully functional and demonstrable\n- Prefers detailed code comments so he can explain the code to professors",
+    "summary": "---",
+    "namespace": "user_krish",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/krish/.claude/projects/-Users-krish-Desktop-study-project-SmartRoadHazard/memory/user_krish.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1774737041881
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "com.krishpotanwar.macin",
+  "description": "Macin Download Manager — Native Messaging Host",
+  "path": "/Applications/Macin.app/Contents/MacOS/MacinNativeMessagingHost",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://REPLACE_WITH_EXTENSION_ID/"
+  ]
+}

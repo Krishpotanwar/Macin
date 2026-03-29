@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Download with Macin</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 400px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #1c1c1e;
+      color: #f2f2f7;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid #2c2c2e;
+    }
+    .header-icon {
+      width: 30px; height: 30px;
+      background: #0a84ff;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .header h1 { font-size: 14px; font-weight: 600; }
+    .body { padding: 14px 16px 10px; }
+    .field { margin-bottom: 12px; }
+    .label {
+      font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      color: #636366; margin-bottom: 4px;
+    }
+    .value { font-size: 13px; color: #f2f2f7; word-break: break-all; line-height: 1.4; }
+    .value.filename { font-weight: 600; }
+    .value.url { color: #ebebf5a0; font-size: 11px; }
+    .path-row { display: flex; gap: 6px; }
+    .path-select {
+      flex: 1;
+      padding: 7px 10px;
+      border-radius: 7px;
+      border: 1px solid #3a3a3c;
+      background: #2c2c2e;
+      color: #f2f2f7;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+    }
+    .path-custom {
+      flex: 1;
+      padding: 7px 10px;
+      border-radius: 7px;
+      border: 1px solid #3a3a3c;
+      background: #2c2c2e;
+      color: #f2f2f7;
+      font-size: 12px;
+      outline: none;
+      display: none;
+    }
+    .path-custom:focus { border-color: #0a84ff; }
+    .divider { border: none; border-top: 1px solid #2c2c2e; margin: 6px 0 12px; }
+    .actions { display: flex; gap: 8px; padding: 0 16px 14px; }
+    .btn {
+      flex: 1; padding: 9px;
+      border-radius: 8px; border: none;
+      font-size: 13px; font-weight: 600; cursor: pointer;
+    }
+    .btn-cancel { background: #2c2c2e; color: #ebebf5cc; }
+    .btn-cancel:hover { background: #3a3a3c; }
+    .btn-download { background: #0a84ff; color: white; }
+    .btn-download:hover { background: #409cff; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-icon">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
+        <path d="M8 1a.5.5 0 01.5.5v7.793l2.646-2.647a.5.5 0 01.707.707l-3.5 3.5a.5.5 0 01-.707 0l-3.5-3.5a.5.5 0 01.707-.707L7.5 9.293V1.5A.5.5 0 018 1zm-5 11a.5.5 0 000 1h10a.5.5 0 000-1H3z"/>
+      </svg>
+    </div>
+    <h1>Download with Macin</h1>
+  </div>
+
+  <div class="body">
+    <div class="field">
+      <div class="label">File Name</div>
+      <div class="value filename" id="filename">—</div>
+    </div>
+    <div class="field">
+      <div class="label">URL</div>
+      <div class="value url" id="url">—</div>
+    </div>
+    <div class="field">
+      <div class="label">Save To</div>
+      <div class="path-row">
+        <select class="path-select" id="pathSelect">
+          <option value="~/Downloads">📥  ~/Downloads</option>
+          <option value="~/Documents">📄  ~/Documents</option>
+          <option value="~/Movies">🎬  ~/Movies</option>
+          <option value="~/Music">🎵  ~/Music</option>
+          <option value="~/Pictures">🖼  ~/Pictures</option>
+          <option value="~/Desktop">🖥  ~/Desktop</option>
+          <option value="custom">✏️  Custom path…</option>
+        </select>
+        <input class="path-custom" id="pathCustom" type="text" placeholder="/Users/you/folder" />
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="actions">
+    <button class="btn btn-cancel" id="cancelBtn">Cancel</button>
+    <button class="btn btn-download" id="downloadBtn">Download</button>
+  </div>
+
+  <script src="confirm.js"></script>
+</body>
+</html>

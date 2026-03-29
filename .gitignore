@@ -1,0 +1,30 @@
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+.build/
+
+# Rust
+MacinRustEngine/target/
+MacinRustEngine/Cargo.lock
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Secrets / keys
+*.p12
+*.pem
+*.mobileprovision
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

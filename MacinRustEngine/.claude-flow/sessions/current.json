@@ -1,0 +1,19 @@
+{
+  "id": "session-1774793523911",
+  "startedAt": "2026-03-29T14:12:03.911Z",
+  "cwd": "/Users/krish/Desktop/study/project/MACIN_download_manager/MacinRustEngine",
+  "context": {
+    "lastMatchedPatterns": [
+      "mem-project_smartroadhazard----",
+      "mem-user_krish----",
+      "mem-MEMORY-memory-index"
+    ]
+  },
+  "metrics": {
+    "edits": 7,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "updatedAt": "2026-03-29T14:41:15.874Z"
+}
